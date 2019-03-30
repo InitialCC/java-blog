@@ -1,0 +1,15 @@
+server:
+  port: 8080
+#  servlet:
+#    context-path: /vip
+spring:
+  datasource:
+    driverClass: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/BlogDb?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password: 123
+
+debug: true
+mybatis:
+  type-aliases-package: com.blog.model
+  mapperLocations: classpath:mybatis/mapper/*.xml
